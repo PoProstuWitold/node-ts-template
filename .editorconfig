@@ -10,5 +10,5 @@ insert_final_newline = false
 trim_trailing_whitespace = false
 
 [*.{js,json,ts,mts,yml,yaml}]
-indent_size = 1
 indent_style = tab
+tab_width = 4

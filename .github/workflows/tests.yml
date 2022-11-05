@@ -1,27 +1,27 @@
 ﻿name: Tests
 
 on:
- pull_request:
- push:
-  branches:
-   - main
-   - master
-   - dev
+    pull_request:
+    push:
+        branches:
+            - main
+            - master
+            - dev
 
 jobs:
- test:
-  name: Running units tests
-  runs-on: ubuntu-latest
-  steps:
-   - name: Actions setup
-     uses: actions/checkout@v2
-   - name: Use Node.js ${{ matrix.node-version }}
-     uses: actions/setup-node@v1
-     with:
-      node-version: ${{ matrix.node-version }}
-   - name: Pnpm setup
-     run: npm install -g pnpm
-   - name: Install
-     run: pnpm install
-   - name: Test
-     run: pnpm test
+    test:
+        name: Running unit tests
+        runs-on: ubuntu-latest
+        steps:
+            - name: Actions Setup
+              uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - name: Pnpm Setup
+              run: npm install -g pnpm
+            - name: Install
+              run: pnpm install
+            - name: Test
+              run: pnpm test
