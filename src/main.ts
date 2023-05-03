@@ -1,5 +1,7 @@
 import { Pet, PetKind, PetStatus } from './types'
 
+console.log('Hello, this is a template project')
+
 export const myPets: Pet[] = [
 	{
 		name: 'Harry',
