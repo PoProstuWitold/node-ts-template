@@ -1,4 +1,4 @@
-import { Pet, PetKind, PetStatus } from './types'
+import { type Pet, PetKind, PetStatus } from './types'
 
 console.log('Hello, this is a template project')
 

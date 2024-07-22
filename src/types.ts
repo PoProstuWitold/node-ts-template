@@ -16,4 +16,4 @@ enum PetStatus {
 	Deceased = 'Deceased'
 }
 
-export { Pet, PetKind, PetStatus }
+export { type Pet, PetKind, PetStatus }

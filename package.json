@@ -1,26 +1,27 @@
 {
 	"name": "node-ts-boilerplate",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"author": "PoProstuWitold",
 	"description": "Basic template for robust development of TypeScript apps",
 	"main": "build/src/main.js",
 	"homepage": "https://github.com/PoProstuWitold/node-ts-template",
 	"engines": {
-		"node": ">=20.x"
+		"node": ">=20.x",
+		"pnpm": ">=9.x"
 	},
-	"packageManager": "^pnpm@8.3.0",
 	"scripts": {
 		"start": "node build/src/main.js",
-		"start:watch": "NODE_ENV='development' nodemon --exec ts-node src/main.ts",
+		"start:watch": "NODE_ENV='development' node --watch --import tsx src/main.ts",
 		"clean": "rimraf coverage build tmp",
-		"lint": "eslint . --ext .ts",
-		"prettier": "prettier --config .prettierrc --write .",
-		"prebuild": "npm run lint",
+		"lint": "pnpm biome lint --write ./src",
+		"format": "pnpm biome format --write ./src",
+		"check": "pnpm biome check --write ./src",
+		"prebuild": "pnpm run check",
 		"build": "tsc -p tsconfig.json",
-		"build:watch": "tsc -w -p tsconfig.json",
-		"build:release": "npm run clean && tsc -p tsconfig.release.json",
-		"test": "jest",
-		"test:watch": "jest --watch"
+		"build:watch": "NODE_ENV='development' tsc -w -p tsconfig.json",
+		"build:release": "pnpm run clean && tsc -p tsconfig.release.json",
+		"test": "node --import tsx --test __tests__/*.test.ts",
+		"test:watch": "NODE_ENV='development' node --watch --import tsx --test __tests__/*.test.ts"
 	},
 	"keywords": [
 		"TypeScript",
@@ -30,21 +31,10 @@
 	],
 	"license": "MIT",
 	"devDependencies": {
-		"@types/jest": "^29.5.12",
-		"@types/node": "^20.11.20",
-		"@typescript-eslint/eslint-plugin": "^7.0.2",
-		"@typescript-eslint/parser": "^7.0.2",
-		"eslint": "^8.56.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-jest": "^27.9.0",
-		"jest": "^29.7.0",
-		"nodemon": "^3.1.0",
-		"prettier": "^3.2.5",
-		"rimraf": "^5.0.5",
-		"ts-jest": "^29.1.2",
-		"ts-node": "^10.9.2",
-		"ts-node-dev": "^2.0.0",
-		"tsutils": "^3.21.0",
-		"typescript": "^5.3.3"
+		"@biomejs/biome": "^1.8.3",
+		"@types/node": "^20.14.11",
+		"rimraf": "^6.0.1",
+		"tsx": "^4.16.2",
+		"typescript": "^5.5.3"
 	}
 }
