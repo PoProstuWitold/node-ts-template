@@ -2,7 +2,7 @@
 
 Basic template for robust development of TypeScript apps with:
 
-- [Node.js] - Latest LTS version of Node. Currently it's **LTS/Iron** (v20).
+- [Node.js](https://nodejs.org/docs/latest-v20.x/api/index.html) - Latest LTS version of Node. Currently it's **LTS/Iron** (v20).
 - [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager.
 - [TypeScript](https://www.typescriptlang.org/) - JavaScript with syntax for types.
 - [ESM Modules](https://nodejs.org/api/esm.html) - modern JavaScript modules.
