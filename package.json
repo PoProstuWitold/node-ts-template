@@ -6,7 +6,7 @@
 	"main": "build/src/main.js",
 	"homepage": "https://github.com/PoProstuWitold/node-ts-template",
 	"engines": {
-		"node": ">=20.x",
+		"node": ">=22.x",
 		"pnpm": ">=9.x"
 	},
 	"scripts": {
@@ -32,7 +32,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"@types/node": "^22.10.2",
+		"@types/node": "^22.10.3",
 		"rimraf": "^6.0.1",
 		"tsx": "^4.19.2",
 		"typescript": "^5.7.2"
