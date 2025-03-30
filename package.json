@@ -33,22 +33,14 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-<<<<<<< HEAD
 		"@types/node": "^22.13.14",
-=======
-		"@types/node": "^22.13.11",
->>>>>>> 6e4418d9af5c17728943110e71574818dc3ba002
 		"rimraf": "^6.0.1",
 		"tsx": "^4.19.3",
 		"typescript": "^5.8.2"
 	},
 	"volta": {
 		"node": "22.14.0",
-<<<<<<< HEAD
 		"pnpm": "10.7.0"
-=======
-		"pnpm": "10.6.5"
->>>>>>> 6e4418d9af5c17728943110e71574818dc3ba002
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
