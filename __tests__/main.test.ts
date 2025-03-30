@@ -1,8 +1,8 @@
 import { describe, it } from 'node:test'
 import { strictEqual } from 'node:assert'
 
-import { getPetByKind, myPets } from '../src/main'
-import { PetKind } from '../src/types'
+import { getPetByKind, myPets } from '../src/main.js'
+import { PetKind } from '../src/types.js'
 
 describe('Pets Functions', () => {
 	describe('When providing', () => {

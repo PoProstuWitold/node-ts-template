@@ -12,8 +12,13 @@ importers:
         specifier: ^1.9.4
         version: 1.9.4
       '@types/node':
+<<<<<<< HEAD
         specifier: ^22.13.14
         version: 22.13.14
+=======
+        specifier: ^22.13.11
+        version: 22.13.11
+>>>>>>> 6e4418d9af5c17728943110e71574818dc3ba002
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
@@ -237,8 +242,13 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
+<<<<<<< HEAD
   '@types/node@22.13.14':
     resolution: {integrity: sha512-Zs/Ollc1SJ8nKUAgc7ivOEdIBM8JAKgrqqUYi2J997JuKO7/tpQC+WCetQ1sypiKCQWHdvdg9wBNpUPEWZae7w==}
+=======
+  '@types/node@22.13.11':
+    resolution: {integrity: sha512-iEUCUJoU0i3VnrCmgoWCXttklWcvoCIx4jzcP22fioIVSdTmjgoEvmAO/QPw6TcS9k5FrNgn4w7q5lGOd1CT5g==}
+>>>>>>> 6e4418d9af5c17728943110e71574818dc3ba002
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -524,7 +534,11 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
+<<<<<<< HEAD
   '@types/node@22.13.14':
+=======
+  '@types/node@22.13.11':
+>>>>>>> 6e4418d9af5c17728943110e71574818dc3ba002
     dependencies:
       undici-types: 6.20.0
 
