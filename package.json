@@ -7,7 +7,7 @@
 	"homepage": "https://github.com/PoProstuWitold/node-ts-template",
 	"engines": {
 		"node": ">=22.x",
-		"pnpm": ">=9.x"
+		"pnpm": ">=10.x"
 	},
 	"scripts": {
 		"start": "node build/src/main.js",
@@ -32,13 +32,18 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"@types/node": "^22.13.4",
+		"@types/node": "^22.13.14",
 		"rimraf": "^6.0.1",
-		"tsx": "^4.19.2",
-		"typescript": "^5.7.3"
+		"tsx": "^4.19.3",
+		"typescript": "^5.8.2"
 	},
 	"volta": {
 		"node": "22.14.0",
-		"pnpm": "10.4.0"
+		"pnpm": "10.7.0"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
 	}
 }
