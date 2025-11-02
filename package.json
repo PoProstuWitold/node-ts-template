@@ -7,7 +7,7 @@
 	"homepage": "https://github.com/PoProstuWitold/node-ts-template",
 	"type": "module",
 	"engines": {
-		"node": ">=22.x",
+		"node": ">=24.x",
 		"pnpm": ">=10.x"
 	},
 	"scripts": {
@@ -25,22 +25,22 @@
 		"test:watch": "NODE_ENV='development' node --watch --import tsx --test __tests__/*.test.ts"
 	},
 	"keywords": [
-		"TypeScript",
+		"typescript",
 		"boilerplate",
 		"node",
 		"ts"
 	],
 	"license": "MIT",
 	"devDependencies": {
-		"@biomejs/biome": "^2.2.5",
-		"@types/node": "^24.7.0",
-		"rimraf": "^6.0.1",
+		"@biomejs/biome": "^2.3.2",
+		"@types/node": "^24.9.2",
+		"rimraf": "^6.1.0",
 		"tsx": "^4.20.6",
 		"typescript": "^5.9.3"
 	},
 	"volta": {
-		"node": "22.20.0",
-		"pnpm": "10.18.1"
+		"node": "24.11.0",
+		"pnpm": "10.20.0"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
