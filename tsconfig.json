@@ -20,7 +20,8 @@
 		"noUnusedParameters": true,
 		"noImplicitAny": false,
 		"noImplicitThis": false,
-		"strictNullChecks": false
+		"strictNullChecks": false,
+		"types": ["node"]
 	},
 	"include": ["src/**/*", "__tests__/**/*"]
 }
