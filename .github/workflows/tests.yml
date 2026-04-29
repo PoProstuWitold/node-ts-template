@@ -13,14 +13,17 @@ jobs:
         name: Running unit tests
         runs-on: ubuntu-latest
         steps:
-            - name: Actions Setup
+            - name: Checkout
               uses: actions/checkout@v5
-            - name: Use Node.js ${{ matrix.node-version }}
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v6
+              with:
+                  version: 10.32.0
+            - name: Use Node.js
               uses: actions/setup-node@v5
               with:
-                  node-version: ${{ matrix.node-version }}
-            - name: Pnpm Setup
-              run: npm install -g pnpm
+                  node-version: 24.15.0
+                  cache: pnpm
             - name: Install
               run: pnpm install --no-frozen-lockfile
             - name: Test
